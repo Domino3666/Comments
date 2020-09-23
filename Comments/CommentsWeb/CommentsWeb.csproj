@@ -20,6 +20,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+    <PackageReference Include="NetEscapades.Extensions.Logging.RollingFile" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,8 +32,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\comments\comment.ts" />
+    <None Remove="ClientApp\src\app\comments\comments.component.ts" />
+    <None Remove="ClientApp\src\app\header\header.component.ts" />
+    <None Remove="ClientApp\src\app\response.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Comments.DB\Comments.DB.csproj" />
     <ProjectReference Include="..\Comments.Implementation\Comments.Implementation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\comments\comment.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\comments\comments.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\header\header.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\response.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

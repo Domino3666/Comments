@@ -10,28 +10,41 @@ namespace Comments.Implementation
     public class CommentsRepo : ICommentsRepo
     {
         protected CommentsContext db;
+        protected ICommentLogger logger;
 
-        public CommentsRepo(CommentsContext db)
+        public CommentsRepo(CommentsContext db, ICommentLogger logger)
         {
             this.db = db;
+            this.logger = logger;
         }        
 
         public async Task<IEnumerable<IComment>> CommentsAsync()
         {
-            return await db.Comments.ToArrayAsync();
+            try
+            {
+                Comment aaa = null;
+                var b = aaa.Text;
+                return await db.Comments.ToArrayAsync();
+            }
+            catch(Exception ex)
+            {
+                logger.LogError(ex);                
+                throw ex;
+            }
         }
 
-        public async Task<bool> AddComment(IComment comment)
+        public async Task<IEnumerable<IComment>> AddComment(IComment comment)
         {
             try
             {
                 await db.Comments.AddAsync((Comment)comment);
                 await db.SaveChangesAsync();
-                return true;
+                return await CommentsAsync();
             }
-            catch
+            catch (Exception ex)
             {
-                return false;
+                logger.LogError(ex);
+                throw ex;
             }
         }
     }

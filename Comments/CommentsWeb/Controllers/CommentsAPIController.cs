@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Comments.DB.Models;
 using Comments.Interfaces;
+using CommentsWeb.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -15,25 +16,55 @@ namespace CommentsWeb.Controllers
     public class CommentsAPIController : ControllerBase
     {
         protected ICommentsRepo commentsRepo;
+        protected ICommentLogger logger;
 
-        public CommentsAPIController(ICommentsRepo commentsRepo)
+        public CommentsAPIController(ICommentsRepo commentsRepo, ICommentLogger logger)
         {
             this.commentsRepo = commentsRepo;
+            this.logger = logger;
         }
 
         [HttpGet]
         [Route("comments")]
-        public async Task<IEnumerable<IComment>> Comments()
+        public async Task<Response<IEnumerable<IComment>>> Comments()
         {
-            return await commentsRepo.CommentsAsync();
+            Response<IEnumerable<IComment>> response = new Response<IEnumerable<IComment>>();
+            try
+            {
+                var model = await commentsRepo.CommentsAsync();
+                response.Success = true;
+                response.Model = model;
+            }
+            catch(Exception ex)
+            {
+                response.Success = false;
+                response.ErrorMsg = "Nastala neočakávaná chyba. Pre bližšie info pozrite prosím logy";
+                logger.LogError(ex);
+                response.Model = Enumerable.Empty<IComment>();
+            }
+            return response;
         }
 
         [HttpPost]
         [Route("addComments")]
-        public async Task<bool> AddComment([FromBody] JObject model)
-        {
-            IComment comment = model.ToObject<Comment>(new Newtonsoft.Json.JsonSerializer { DateFormatString = "d.M.yyyy" });
-            return await commentsRepo.AddComment(comment);
+        public async Task<Response<IEnumerable<IComment>>> AddComment([FromBody] JObject data)
+        {            
+            Response<IEnumerable<IComment>> response = new Response<IEnumerable<IComment>>();
+            try
+            {
+                IComment comment = data.ToObject<Comment>(new Newtonsoft.Json.JsonSerializer { DateFormatString = "d.M.yyyy" });
+                var model = await commentsRepo.AddComment(comment);
+                response.Success = true;
+                response.Model = model;
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.ErrorMsg = "Nastala neočakávaná chyba. Pre bližšie info pozrite prosím logy";
+                logger.LogError(ex);
+                response.Model = Enumerable.Empty<IComment>();
+            }
+            return response;
         }
     }
 }

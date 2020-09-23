@@ -9,6 +9,6 @@ namespace Comments.Interfaces
     {
         Task<IEnumerable<IComment>> CommentsAsync();
 
-        Task<bool> AddComment(IComment comment);
+        Task<IEnumerable<IComment>> AddComment(IComment comment);
     }
 }

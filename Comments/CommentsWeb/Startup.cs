@@ -1,5 +1,6 @@
 using Comments.DB.Models;
 using Comments.Implementation;
+using Comments.Implementation.Helpers;
 using Comments.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using NetEscapades.Extensions.Logging.RollingFile;
 using Newtonsoft.Json.Serialization;
 
 namespace CommentsWeb
@@ -32,9 +35,26 @@ namespace CommentsWeb
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddLogging(config =>
+            {
+                config.ClearProviders();
+                config.AddConfiguration(Configuration.GetSection("Logging"));
+                config.AddDebug();
+                config.AddFile(options =>
+                {
+                    options.FileName = "logFile-"; // The log file prefixes
+                    options.LogDirectory = "LogFiles"; // The directory to write the logs
+                    options.FileSizeLimit = 20 * 1024 * 1024; // The maximum log file size (20MB here)
+                    options.Extension = "log"; // The log file extension
+                    options.Periodicity = PeriodicityOptions.Daily; // Roll log files hourly instead of daily.
+                });
+            });
+
             services.AddEntityFrameworkSqlite().AddDbContext<CommentsContext>();
             services.AddScoped<IComment, Comment>();
             services.AddScoped<ICommentsRepo, CommentsRepo>();
+            services.AddScoped<ICommentLogger, CommentLogger>();            
 
             services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                              .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)                             

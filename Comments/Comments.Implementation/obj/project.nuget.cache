@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nNiuep64hLcfzPHt8F+9wmS4SbeCb6kwj9ivxi/YNejNES+muIK7dtlIGBceFe643+eW8Lo1MjXMENpVuSuiKw==",
+  "dgSpecHash": "rmNzxxtk/H7y1cjuVUlGBwWiEEENAPJp+aeMhWLhQ8WS4xqlcTP0tgpkmi8cPTTsW0CJMOTHvjmlHgNNFN1aQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\baluchd\\Documents\\moje\\Projekty\\Comments\\Comments\\Comments.Implementation\\Comments.Implementation.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\baluchd\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.8\\microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\baluchd\\.nuget\\packages\\microsoft.extensions.options\\3.1.8\\microsoft.extensions.options.3.1.8.nupkg.sha512",
     "C:\\Users\\baluchd\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.8\\microsoft.extensions.primitives.3.1.8.nupkg.sha512",
+    "C:\\Users\\baluchd\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\baluchd\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\baluchd\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\baluchd\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
