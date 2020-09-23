@@ -1,0 +1,14 @@
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.Implementation.deps.json
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.Implementation.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.Implementation.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.DB.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.Interfaces.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.DB.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\bin\Debug\netcoreapp3.1\Comments.Interfaces.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.csprojAssemblyReference.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.AssemblyInfoInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.AssemblyInfo.cs
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.csproj.CopyComplete
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Implementation\obj\Debug\netcoreapp3.1\Comments.Implementation.pdb

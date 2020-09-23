@@ -1,0 +1,15 @@
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.DB.deps.json
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.DB.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.csprojAssemblyReference.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.AssemblyInfoInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.AssemblyInfo.cs
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.DB.runtimeconfig.json
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.DB.runtimeconfig.dev.json
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.DB.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.csproj.CoreCompileInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.genruntimeconfig.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.Interfaces.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\bin\Debug\netcoreapp3.1\Comments.Interfaces.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.DB\obj\Debug\netcoreapp3.1\Comments.DB.csproj.CopyComplete

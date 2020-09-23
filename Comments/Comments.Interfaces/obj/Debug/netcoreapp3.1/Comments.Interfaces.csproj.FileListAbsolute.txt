@@ -1,0 +1,9 @@
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\bin\Debug\netcoreapp3.1\Comments.Interfaces.deps.json
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\bin\Debug\netcoreapp3.1\Comments.Interfaces.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\bin\Debug\netcoreapp3.1\Comments.Interfaces.pdb
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.csprojAssemblyReference.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.AssemblyInfoInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.AssemblyInfo.cs
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.dll
+C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.pdb

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Comments.DB\Comments.DB.csproj" />
+    <ProjectReference Include="..\Comments.Interfaces\Comments.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
