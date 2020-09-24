@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 })
 export class CommentsComponent {
   comments: IComment[];
-  Text: '';  
+  text: string = '';  
 
   constructor(private http: HttpClient) {
     this.loadComments();
@@ -37,7 +37,7 @@ export class CommentsComponent {
   addComment() {    
     this.http.post<IResponse>('/api/CommentsAPI/addComments', {
       "Id": 0,
-      "Text": this.Text,
+      "Text": this.text,
       "Date": new Date()
     }).subscribe(result => {
       if (result.Success) {
@@ -54,6 +54,6 @@ export class CommentsComponent {
       text: error.message,
       icon: 'warning'
     }));
-    this.Text = '';
+    this.text = '';
   }
 }
