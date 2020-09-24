@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IComment } from './comment';
 import { HttpClient } from '@angular/common/http';
 import { IResponse } from '../response';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-comments',
@@ -9,21 +10,50 @@ import { IResponse } from '../response';
 })
 export class CommentsComponent {
   comments: IComment[];
-  Text: '';
+  Text: '';  
 
   constructor(private http: HttpClient) {
-    this.http.get<IResponse>('/api/CommentsAPI/comments').subscribe(result => {
-      this.comments = result.Model as IComment[];
-    }, error => console.error(error));
+    this.loadComments();
   }
 
-  addComment() {
+  loadComments() {
+    this.http.get<IResponse>('/api/CommentsAPI/comments').subscribe(result => {
+      if (result.Success) {
+        this.comments = result.Model as IComment[];
+      } else {
+        Swal.fire({
+          title: 'Error',
+          text: result.ErrorMsg,
+          icon: 'warning'
+        });
+      }
+    }, error => Swal.fire({
+      title: 'Error',
+      text: error.message,
+      icon: 'warning'
+    })); 
+  }
+
+  addComment() {    
     this.http.post<IResponse>('/api/CommentsAPI/addComments', {
       "Id": 0,
       "Text": this.Text,
       "Date": new Date()
     }).subscribe(result => {
-      this.comments = result.Model as IComment[];
-    }, error => console.error(error));
+      if (result.Success) {
+        this.comments = result.Model as IComment[];        
+      } else {
+        Swal.fire({
+          title: 'Error',
+          text: result.ErrorMsg,
+          icon: 'warning'
+        });
+      }
+    }, error => Swal.fire({
+      title: 'Error',
+      text: error.message,
+      icon: 'warning'
+    }));
+    this.Text = '';
   }
 }

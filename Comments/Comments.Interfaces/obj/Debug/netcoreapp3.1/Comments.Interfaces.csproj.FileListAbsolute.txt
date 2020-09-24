@@ -6,4 +6,3 @@ C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\o
 C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.csproj.CoreCompileInputs.cache
 C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.dll
 C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.pdb
-C:\Users\baluchd\Documents\moje\Projekty\Comments\Comments\Comments.Interfaces\obj\Debug\netcoreapp3.1\Comments.Interfaces.csprojAssemblyReference.cache

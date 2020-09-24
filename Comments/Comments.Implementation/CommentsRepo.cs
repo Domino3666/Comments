@@ -21,9 +21,7 @@ namespace Comments.Implementation
         public async Task<IEnumerable<IComment>> CommentsAsync()
         {
             try
-            {
-                Comment aaa = null;
-                var b = aaa.Text;
+            {                
                 return await db.Comments.ToArrayAsync();
             }
             catch(Exception ex)

@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentsWebApp", "CommentsWebApp\CommentsWebApp.csproj", "{D3E2DFE4-5C69-479A-BF6A-8E39A7E6FE52}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentsWeb", "CommentsWeb\CommentsWeb.csproj", "{C186FA1C-9A65-45EB-9EFD-FCDA8D20B3A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments.DB", "Comments.DB\Comments.DB.csproj", "{3845F855-D0EF-4B58-8A7F-479DE0502377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comments.DB", "Comments.DB\Comments.DB.csproj", "{3845F855-D0EF-4B58-8A7F-479DE0502377}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments.Interfaces", "Comments.Interfaces\Comments.Interfaces.csproj", "{50573843-31F0-4BF7-A3C3-FF67552CF184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comments.Interfaces", "Comments.Interfaces\Comments.Interfaces.csproj", "{50573843-31F0-4BF7-A3C3-FF67552CF184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments.Implementation", "Comments.Implementation\Comments.Implementation.csproj", "{2BEB6FD4-9D9A-4448-9611-912DBCAB92B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comments.Implementation", "Comments.Implementation\Comments.Implementation.csproj", "{2BEB6FD4-9D9A-4448-9611-912DBCAB92B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3E2DFE4-5C69-479A-BF6A-8E39A7E6FE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3E2DFE4-5C69-479A-BF6A-8E39A7E6FE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3E2DFE4-5C69-479A-BF6A-8E39A7E6FE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3E2DFE4-5C69-479A-BF6A-8E39A7E6FE52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C186FA1C-9A65-45EB-9EFD-FCDA8D20B3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C186FA1C-9A65-45EB-9EFD-FCDA8D20B3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C186FA1C-9A65-45EB-9EFD-FCDA8D20B3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
